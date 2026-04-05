@@ -32,7 +32,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
       <AnimatePresence>
         {sidebarOpen && (
           <motion.div
-            className="fixed inset-y-0 left-0 z-50 w-64 bg-white/90 backdrop-blur-xl shadow-2xl md:hidden"
+            className="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg md:hidden"
             initial={{ x: -280 }}
             animate={{ x: 0 }}
             exit={{ x: -280 }}
@@ -40,12 +40,12 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
           >
             <div className="p-6">
               <div className="flex items-center gap-3 mb-8">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-pink-400 rounded-2xl flex items-center justify-center shadow-glow">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-md">
                   <span className="text-2xl font-bold text-white">W</span>
                 </div>
                 <div>
-                  <h1 className="text-xl font-bold bg-gradient-to-r from-primary-600 to-pink-500 bg-clip-text text-transparent">
-                    WDC Udaan
+                  <h1 className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    WDC-Connect
                   </h1>
                   <p className="text-sm text-gray-500">Empower Her</p>
                 </div>
@@ -71,18 +71,18 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
 
       {/* Desktop sidebar */}
       <motion.aside
-        className="fixed inset-y-0 left-0 z-30 w-64 bg-white/90 backdrop-blur-xl shadow-glow-lg hidden md:block"
+        className="fixed inset-y-0 left-0 z-30 w-64 bg-white shadow-lg hidden md:block"
         initial={{ x: -280 }}
         animate={{ x: 0 }}
       >
         <div className="p-6 h-full flex flex-col">
           <div className="flex items-center gap-3 mb-12 pb-6 border-b border-gray-100">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-pink-400 rounded-2xl flex items-center justify-center shadow-glow">
+            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-md">
               <span className="text-2xl font-bold text-white">W</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold bg-gradient-to-r from-primary-600 to-pink-500 bg-clip-text text-transparent">
-                WDC Udaan
+              <h1 className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                WDC-Connect
               </h1>
               <p className="text-sm text-gray-500">Empower Her</p>
             </div>

@@ -4,52 +4,52 @@ import { Link } from "react-router-dom";
 
 export default function Landing() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-400 to-lavender">
+    <div className="min-h-screen bg-gradient-to-br from-purple-200 via-pink-100 to-purple-100">
       {/* Navigation */}
       <nav className="px-6 md:px-12 py-6 flex justify-between items-center">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-12 bg-white/20 backdrop-blur-xl rounded-2xl flex items-center justify-center">
+          <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg">
             <span className="text-2xl font-bold text-white">W</span>
           </div>
-          <h1 className="text-2xl font-bold text-white">WDC Udaan</h1>
+          <h1 className="text-2xl font-bold text-purple-900">WDC-Connect</h1>
         </div>
-        <Link to="/login" className="gradient-btn text-sm">
+        <Link to="/login" className="btn-primary text-sm">
           Get Started
         </Link>
       </nav>
 
       {/* Hero */}
-      <div className="px-6 md:px-12 lg:px-24 py-20 md:py-32">
+      <div className="px-6 md:px-12 lg:px-24 py-20 md:py-32 max-w-6xl mx-auto">
         <motion.div
-          className="max-w-4xl mx-auto text-center"
+          className="text-center"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <motion.h1
-            className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight"
+            className="text-4xl md:text-6xl font-bold text-purple-900 mb-6 leading-tight"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Safe • Support •{" "}
-            <span className="bg-white/20 px-4 py-2 rounded-3xl backdrop-blur-xl">
+            <span className="bg-white/30 px-6 py-3 rounded-xl inline-block">
               Empower
             </span>
           </motion.h1>
 
-          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
             Women Development Cell platform for campus safety, events, and
             community support. Your voice matters.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Link to="/login" className="gradient-btn text-lg px-12 py-4">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+            <Link to="/login" className="btn-primary text-lg px-12 py-4">
               Join Now <ArrowRight className="w-5 h-5 ml-2 inline" />
             </Link>
             <Link
               to="/register"
-              className="px-12 py-4 border-2 border-white/30 bg-white/10 backdrop-blur-xl rounded-2xl text-white font-semibold hover:bg-white/20 transition-all duration-300"
+              className="px-12 py-4 border-2 border-purple-200 bg-white/50 backdrop-blur-md rounded-xl text-purple-900 font-semibold hover:bg-white hover:shadow-lg transition-all duration-300"
             >
               Learn More
             </Link>
